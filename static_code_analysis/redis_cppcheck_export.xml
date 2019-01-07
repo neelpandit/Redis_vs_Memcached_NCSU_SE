@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.85"/>
+    <errors>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;__redisShiftCallback&amp;#039;." verbose="Non-pure function: &amp;#039;__redisShiftCallback&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\hiredis\async.c" line="339"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &amp;#039;ExampleQt::m_ctx&amp;#039; is not initialized in the constructor." verbose="Member variable &amp;#039;ExampleQt::m_ctx&amp;#039; is not initialized in the constructor." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\hiredis\examples\example-qt.h" line="11"/>
+        </error>
+        <error id="assignmentInAssert" severity="warning" msg="Assert statement modifies &amp;#039;n_search&amp;#039;." verbose="Variable &amp;#039;n_search&amp;#039; is modified insert assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\jemalloc\src\background_thread.c" line="191"/>
+        </error>
+        <error id="signConversion" severity="warning" msg="Suspicious code: sign conversion of 18446744073709551615 in calculation because &amp;#039;18446744073709551615&amp;#039; has a negative value" verbose="Suspicious code: sign conversion of 18446744073709551615 in calculation because &amp;#039;18446744073709551615&amp;#039; has a negative value" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\jemalloc\src\stats.c" line="63"/>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function malloc() is not used." verbose="Return value of function malloc() is not used." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\jemalloc\test\unit\fork.c" line="78"/>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Either the condition &amp;#039;token&amp;lt;257&amp;#039; is redundant or iscntrl() argument nr 1 can have invalid value. The value is 256 but the valid values are &amp;#039;0:255&amp;#039;." verbose="Either the condition &amp;#039;token&amp;lt;257&amp;#039; is redundant or iscntrl() argument nr 1 can have invalid value. The value is 256 but the valid values are &amp;#039;0:255&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\llex.c" line="81" info="Invalid argument"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\llex.c" line="79" info="Assuming that condition &amp;#039;token&amp;lt;257&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="359" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="362" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="363" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="364" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="365" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="366" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="367" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="368" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="369" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="370" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="371" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." verbose="Either the condition &amp;#039;if(fs)&amp;#039; is redundant or there is possible null pointer dereference: fs." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="376" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lparser.c" line="378" info="Assuming that condition &amp;#039;if(fs)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;(b=readline(prmt))!=NULL&amp;#039; is redundant or there is possible null pointer dereference: b." verbose="Either the condition &amp;#039;(b=readline(prmt))!=NULL&amp;#039; is redundant or there is possible null pointer dereference: b." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lua.c" line="184" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\deps\lua\src\lua.c" line="182" info="Assuming that condition &amp;#039;(b=readline(prmt))!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;if(o&amp;amp;&amp;amp;o-&amp;gt;encoding==1)&amp;#039; is redundant or there is possible null pointer dereference: o." verbose="Either the condition &amp;#039;if(o&amp;amp;&amp;amp;o-&amp;gt;encoding==1)&amp;#039; is redundant or there is possible null pointer dereference: o." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\bitops.c" line="507" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\bitops.c" line="512" info="Assuming that condition &amp;#039;if(o&amp;amp;&amp;amp;o-&amp;gt;encoding==1)&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: node" verbose="Possible null pointer dereference: node" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\cluster.c" line="2638" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\cluster.c" line="2631" info="Assignment &amp;#039;node=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." verbose="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\debug.c" line="470"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\debug.c" line="480"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\dict.c" line="1069"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 4) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 4) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\dict.c" line="1069"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 5) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 5) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\dict.c" line="1069"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 6) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 6) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\dict.c" line="1069"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 2) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\dict.c" line="1085"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\dict.c" line="1085"/>
+        </error>
+        <error id="signConversion" severity="warning" msg="Suspicious code: sign conversion of - in calculation, even though - can have a negative value" verbose="Suspicious code: sign conversion of - in calculation, even though - can have a negative value" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\evict.c" line="228"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\geo.c" line="345"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\geo.c" line="357"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\geo.c" line="374"/>
+        </error>
+        <error id="signConversion" severity="warning" msg="Suspicious code: sign conversion of - in calculation, even though - can have a negative value" verbose="Suspicious code: sign conversion of - in calculation, even though - can have a negative value" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\geo.c" line="740"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &amp;#039;expiretime&amp;#039; to itself." verbose="Redundant assignment of &amp;#039;expiretime&amp;#039; to itself." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\module.c" line="4244"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &amp;#039;newline&amp;#039; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &amp;#039;newline&amp;#039; is redundant or there is overflow in pointer subtraction." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\networking.c" line="1188" info="Null pointer subtraction"/>
+            <location file="..\Downloads\redis-unstable\src\networking.c" line="1184" info="Assuming that condition &amp;#039;newline&amp;#039; is not redundant"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &amp;#039;id&amp;#039; to itself." verbose="Redundant assignment of &amp;#039;id&amp;#039; to itself." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\networking.c" line="954"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: node" verbose="Possible null pointer dereference: node" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="581" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="716" info="Calling function &amp;#039;__quicklistDelNode&amp;#039;, 2nd argument &amp;#039;node&amp;#039; value is 0"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;nokeep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: node" verbose="Possible null pointer dereference: node" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="583" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="716" info="Calling function &amp;#039;__quicklistDelNode&amp;#039;, 2nd argument &amp;#039;node&amp;#039; value is 0"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;nokeep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: node" verbose="Possible null pointer dereference: node" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="598" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="716" info="Calling function &amp;#039;__quicklistDelNode&amp;#039;, 2nd argument &amp;#039;node&amp;#039; value is 0"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;nokeep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: node" verbose="Possible null pointer dereference: node" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="600" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="716" info="Calling function &amp;#039;__quicklistDelNode&amp;#039;, 2nd argument &amp;#039;node&amp;#039; value is 0"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;nokeep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: keep" verbose="Possible null pointer dereference: keep" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="712" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;keep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: keep" verbose="Possible null pointer dereference: keep" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="713" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;keep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: nokeep" verbose="Possible null pointer dereference: nokeep" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="715" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;nokeep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: keep" verbose="Possible null pointer dereference: keep" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="717" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="704" info="Assignment &amp;#039;keep=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: nextFn" verbose="Possible null pointer dereference: nextFn" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1149" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1133" info="Assignment &amp;#039;nextFn=NULL&amp;#039;, assigned value is 0"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1524"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 2) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%u in format string (no. 2) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1524"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1529"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1556"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1556"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1556"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1564"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1564"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1578"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1578"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1578"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1578"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1588"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1588"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1588"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1588"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 8) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 8) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1588"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 1) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2012"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2614"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2614"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2622"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%u in format string (no. 5) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2622"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2622"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="2647"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;node&amp;#039; is redundant or there is possible null pointer dereference: node." verbose="Either the condition &amp;#039;node&amp;#039; is redundant or there is possible null pointer dereference: node." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1586" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1576" info="Assuming that condition &amp;#039;node&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;node&amp;#039; is redundant or there is possible null pointer dereference: node." verbose="Either the condition &amp;#039;node&amp;#039; is redundant or there is possible null pointer dereference: node." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1587" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1576" info="Assuming that condition &amp;#039;node&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;node&amp;#039; is redundant or there is possible null pointer dereference: node." verbose="Either the condition &amp;#039;node&amp;#039; is redundant or there is possible null pointer dereference: node." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1588" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1576" info="Assuming that condition &amp;#039;node&amp;#039; is not redundant"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="824"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="824"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="852"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed int&amp;#039;." verbose="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="852"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="977"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 1) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 1) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1015"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 2) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 2) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1015"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%lld in format string (no. 3) requires &amp;#039;long long&amp;#039; but the argument type is &amp;#039;unsigned long long&amp;#039;." verbose="%lld in format string (no. 3) requires &amp;#039;long long&amp;#039; but the argument type is &amp;#039;unsigned long long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\quicklist.c" line="1250"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 5) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 5) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="1890"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 6) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 6) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="1890"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &amp;#039;dst&amp;#039; used instead of size of its data." verbose="Size of pointer &amp;#039;dst&amp;#039; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &amp;#039;sizeof(*dst)&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="318"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &amp;#039;src&amp;#039; used instead of size of its data." verbose="Size of pointer &amp;#039;src&amp;#039; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &amp;#039;sizeof(*src)&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="347"/>
+        </error>
+        <error id="pointerSize" severity="warning" msg="Size of pointer &amp;#039;src&amp;#039; used instead of size of its data." verbose="Size of pointer &amp;#039;src&amp;#039; used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write &amp;#039;sizeof(*src)&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="360"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;raxRemove&amp;#039;." verbose="Non-pure function: &amp;#039;raxRemove&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="894"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="687"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 4) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 4) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rax.c" line="1050"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &amp;#039;len&amp;#039; to itself." verbose="Redundant assignment of &amp;#039;len&amp;#039; to itself." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\rdb.c" line="166"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." verbose="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="4427"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 3) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." verbose="%lu in format string (no. 3) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="4427"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;!r&amp;#039; is redundant or there is possible null pointer dereference: r." verbose="Either the condition &amp;#039;!r&amp;#039; is redundant or there is possible null pointer dereference: r." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2170" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2167" info="Assuming that condition &amp;#039;!r&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;!r&amp;#039; is redundant or there is possible null pointer dereference: r." verbose="Either the condition &amp;#039;!r&amp;#039; is redundant or there is possible null pointer dereference: r." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2171" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2167" info="Assuming that condition &amp;#039;!r&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;!r&amp;#039; is redundant or there is possible null pointer dereference: r." verbose="Either the condition &amp;#039;!r&amp;#039; is redundant or there is possible null pointer dereference: r." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2172" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2167" info="Assuming that condition &amp;#039;!r&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;reply!=NULL&amp;#039; is redundant or there is possible null pointer dereference: reply." verbose="Either the condition &amp;#039;reply!=NULL&amp;#039; is redundant or there is possible null pointer dereference: reply." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2645" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2645" info="Assuming that condition &amp;#039;reply!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;reply==NULL&amp;#039; is redundant or there is possible null pointer dereference: reply." verbose="Either the condition &amp;#039;reply==NULL&amp;#039; is redundant or there is possible null pointer dereference: reply." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2977" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2975" info="Assuming that condition &amp;#039;reply==NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;reply==NULL&amp;#039; is redundant or there is possible null pointer dereference: reply." verbose="Either the condition &amp;#039;reply==NULL&amp;#039; is redundant or there is possible null pointer dereference: reply." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2978" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\redis-cli.c" line="2975" info="Assuming that condition &amp;#039;reply==NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;(argv=ldbReplParseCommand(&amp;amp;argc))==NULL&amp;#039; is redundant or there is possible null pointer dereference: argv." verbose="Either the condition &amp;#039;(argv=ldbReplParseCommand(&amp;amp;argc))==NULL&amp;#039; is redundant or there is possible null pointer dereference: argv." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\scripting.c" line="2312" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\scripting.c" line="2294" info="Assuming that condition &amp;#039;(argv=ldbReplParseCommand(&amp;amp;argc))==NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: ri" verbose="Possible null pointer dereference: ri" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\sentinel.c" line="613" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\sentinel.c" line="782" info="Calling function &amp;#039;sentinelEvent&amp;#039;, 3rd argument &amp;#039;ri&amp;#039; value is 0"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="746"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="750"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="753"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="757"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="761"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="765"/>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &amp;#039;string2l&amp;#039;." verbose="Non-pure function: &amp;#039;string2l&amp;#039; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\util.c" line="769"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\ziplist.c" line="1195"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." verbose="%ld in format string (no. 3) requires &amp;#039;long&amp;#039; but the argument type is &amp;#039;unsigned long&amp;#039;." sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\ziplist.c" line="1205"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: p" verbose="Possible null pointer dereference: p" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\ziplist.c" line="362" info="Null pointer dereference"/>
+            <location file="..\Downloads\redis-unstable\src\ziplist.c" line="776" info="Calling function &amp;#039;zipStoreEntryEncoding&amp;#039;, 1st argument &amp;#039;p&amp;#039; value is 0"/>
+        </error>
+        <error id="funcArgOrderDifferent" severity="warning" msg="Function &amp;#039;ziplistGet&amp;#039; argument order different: declaration &amp;#039;p, sval, slen, lval&amp;#039; definition &amp;#039;p, sstr, slen, sval&amp;#039;" verbose="Function &amp;#039;ziplistGet&amp;#039; argument order different: declaration &amp;#039;p, sval, slen, lval&amp;#039; definition &amp;#039;p, sstr, slen, sval&amp;#039;" sinceDate="12/6/2018">
+            <location file="..\Downloads\redis-unstable\src\ziplist.c" line="1034" info=""/>
+            <location file="..\Downloads\redis-unstable\src\ziplist.h" line="43" info=""/>
+        </error>
+    </errors>
+</results>

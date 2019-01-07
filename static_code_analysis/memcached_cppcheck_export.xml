@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.85"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;bucket&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;bucket&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\assoc.c" line="208"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="63"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="64"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="65"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="66"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="67"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="68"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="69"/>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &amp;#039;&amp;amp;&amp;#039; and &amp;#039;?&amp;#039;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &amp;#039;&amp;#039;a&amp;amp;b?c:d&amp;#039;&amp;#039; should be written as either &amp;#039;&amp;#039;(a&amp;amp;b)?c:d&amp;#039;&amp;#039; or &amp;#039;&amp;#039;a&amp;amp;(b?c:d)&amp;#039;&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\crc32c.c" line="70"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;end&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;end&amp;#039; is reassigned a value before the old one has been used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\extstore.c" line="721" info=""/>
+            <location file="..\Downloads\memcached-master\extstore.c" line="719" info=""/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;tmp&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;tmp&amp;#039; is reassigned a value before the old one has been used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\extstore.c" line="813" info=""/>
+            <location file="..\Downloads\memcached-master\extstore.c" line="803" info=""/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;dst==0&amp;#039; is always true" verbose="Condition &amp;#039;dst==0&amp;#039; is always true" sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\items.c" line="1647"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;i&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;i&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\items.c" line="678"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;i&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;i&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\items.c" line="737"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;be&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;be&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\items.c" line="1311"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;cold_age&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;cold_age&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\items.c" line="1386"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;stop_lru_maintainer_thread&amp;#039; is never used." verbose="The function &amp;#039;stop_lru_maintainer_thread&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\items.c" line="1663"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\logger.c" line="214"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;e&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;e&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\logger.c" line="344"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 7) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\logger.c" line="228"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\logger.c" line="352"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\logger.c" line="471"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="portability" msg="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." verbose="%lu in format string (no. 2) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;size_t {aka unsigned long}&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\logger.c" line="773"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &amp;#039;enable_large_pages()==0&amp;#039; is always false" verbose="Condition &amp;#039;enable_large_pages()==0&amp;#039; is always false" sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6947"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%llu in format string (no. 2) requires &amp;#039;unsigned long long&amp;#039; but the argument type is &amp;#039;signed long long&amp;#039;." verbose="%llu in format string (no. 2) requires &amp;#039;unsigned long long&amp;#039; but the argument type is &amp;#039;signed long long&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1423"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 3) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1423"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="3393"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1257" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1404" info="Calling function &amp;#039;binary_get_request&amp;#039;, 1st argument &amp;#039;c&amp;#039; value is 0"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1406" info="Assuming that condition &amp;#039;c!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1258" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1404" info="Calling function &amp;#039;binary_get_request&amp;#039;, 1st argument &amp;#039;c&amp;#039; value is 0"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1406" info="Assuming that condition &amp;#039;c!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1259" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1404" info="Calling function &amp;#039;binary_get_request&amp;#039;, 1st argument &amp;#039;c&amp;#039; value is 0"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1406" info="Assuming that condition &amp;#039;c!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1261" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1404" info="Calling function &amp;#039;binary_get_request&amp;#039;, 1st argument &amp;#039;c&amp;#039; value is 0"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="1406" info="Assuming that condition &amp;#039;c!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1269" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="2605" info="Calling function &amp;#039;binary_get_key&amp;#039;, 1st argument &amp;#039;c&amp;#039; value is 0"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="2608" info="Assuming that condition &amp;#039;c!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." verbose="Either the condition &amp;#039;c!=NULL&amp;#039; is redundant or there is possible null pointer dereference: c." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="2606" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="2608" info="Assuming that condition &amp;#039;c!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &amp;#039;command!=NULL&amp;#039; is redundant or there is possible null pointer dereference: command." verbose="Either the condition &amp;#039;command!=NULL&amp;#039; is redundant or there is possible null pointer dereference: command." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="2971" info="Null pointer dereference"/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="2974" info="Assuming that condition &amp;#039;command!=NULL&amp;#039; is not redundant"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &amp;#039;p&amp;#039; is reassigned a value before the old one has been used." verbose="Variable &amp;#039;p&amp;#039; is reassigned a value before the old one has been used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6026" info=""/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="6024" info=""/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="The expression &amp;#039;outlen &amp;gt; 0&amp;#039; is always false." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="2161" info=""/>
+            <location file="..\Downloads\memcached-master\memcached.c" line="2082" info="&amp;#039;outlen&amp;#039; is assigned value &amp;#039;0&amp;#039; here."/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;oldest_last_cmd&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;oldest_last_cmd&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="338"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;leftover&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;leftover&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="971"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;it&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;it&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="1396"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;level&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;level&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="4416"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;x&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;x&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="4447"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;res&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;res&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="5127"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;sfd&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;sfd&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="5853"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;pw&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;pw&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6569"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;len&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;len&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="7751"/>
+        </error>
+        <error id="umaskCalled" severity="style" msg="Obsolete function &amp;#039;umask&amp;#039; called. It is recommended to use &amp;#039;_umask&amp;#039; instead." verbose="Obsolete function &amp;#039;umask&amp;#039; called. It is recommended to use &amp;#039;_umask&amp;#039; instead." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6114"/>
+        </error>
+        <error id="umaskCalled" severity="style" msg="Obsolete function &amp;#039;umask&amp;#039; called. It is recommended to use &amp;#039;_umask&amp;#039; instead." verbose="Obsolete function &amp;#039;umask&amp;#039; called. It is recommended to use &amp;#039;_umask&amp;#039; instead." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6118"/>
+        </error>
+        <error id="umaskCalled" severity="style" msg="Obsolete function &amp;#039;umask&amp;#039; called. It is recommended to use &amp;#039;_umask&amp;#039; instead." verbose="Obsolete function &amp;#039;umask&amp;#039; called. It is recommended to use &amp;#039;_umask&amp;#039; instead." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6121"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;CLOCK_MONOTONIC;HAVE_CLOCK_GETTIME&amp;#039; since the value of &amp;#039;CLOCK_MONOTONIC&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;CLOCK_MONOTONIC;HAVE_CLOCK_GETTIME&amp;#039; since the value of &amp;#039;CLOCK_MONOTONIC&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6169"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;CLOCK_MONOTONIC;HAVE_CLOCK_GETTIME&amp;#039; since the value of &amp;#039;CLOCK_MONOTONIC&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;CLOCK_MONOTONIC;HAVE_CLOCK_GETTIME&amp;#039; since the value of &amp;#039;CLOCK_MONOTONIC&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="6187"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="7469"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;klen&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;klen&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="3404"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;vlen&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;vlen&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="3404"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;x&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;x&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="3618"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;i&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;i&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="3639"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;v&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;v&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="3640"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;IPV6_V6ONLY&amp;#039; since the value of &amp;#039;IPV6_V6ONLY&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;IPV6_V6ONLY&amp;#039; since the value of &amp;#039;IPV6_V6ONLY&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\memcached.c" line="5895"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 2) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\sasl_defs.c" line="39"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;signed int&amp;#039;." verbose="%u in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;signed int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\slabs.c" line="578"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;hv&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;hv&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\slabs.c" line="877"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &amp;#039;hold_lock&amp;#039; can be reduced." verbose="The scope of the variable &amp;#039;hold_lock&amp;#039; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &amp;#039;i&amp;#039; can be reduced:&#10;void f(int x)&#10;{&#10;    int i = 0;&#10;    if (x) {&#10;        // it&amp;#039;s safe to move &amp;#039;int i = 0;&amp;#039; here&#10;        for (int n = 0; n &amp;lt; 10; ++n) {&#10;            // it is possible but not safe to move &amp;#039;int i = 0;&amp;#039; here&#10;            do_something(&amp;amp;i);&#10;        }&#10;    }&#10;}&#10;When you see this message it is always safe to reduce the variable scope 1 level." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\slabs.c" line="878"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &amp;#039;MADV_HUGEPAGE;__linux__&amp;#039; since the value of &amp;#039;MADV_HUGEPAGE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &amp;#039;MADV_HUGEPAGE;__linux__&amp;#039; since the value of &amp;#039;MADV_HUGEPAGE&amp;#039; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\slabs.c" line="142"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;slabs_adjust_mem_requested&amp;#039; is never used." verbose="The function &amp;#039;slabs_adjust_mem_requested&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\slabs.c" line="695"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;stop_slab_maintenance_thread&amp;#039; is never used." verbose="The function &amp;#039;stop_slab_maintenance_thread&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\slabs.c" line="1337"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\testapp.c" line="297"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." verbose="%lu in format string (no. 1) requires &amp;#039;unsigned long&amp;#039; but the argument type is &amp;#039;signed long&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\testapp.c" line="301"/>
+        </error>
+        <error id="invalidPrintfArgType_uint" severity="warning" msg="%u in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;signed int&amp;#039;." verbose="%u in format string (no. 1) requires &amp;#039;unsigned int&amp;#039; but the argument type is &amp;#039;signed int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\testapp.c" line="324"/>
+        </error>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &amp;#039;*(p-1)&amp;#039; to itself." verbose="Redundant assignment of &amp;#039;*(p-1)&amp;#039; to itself." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\testapp.c" line="168"/>
+        </error>
+        <error id="literalWithCharPtrCompare" severity="warning" msg="String literal compared with variable &amp;#039;NULL&amp;#039;. Did you intend to use strcmp() instead?" verbose="String literal compared with variable &amp;#039;NULL&amp;#039;. Did you intend to use strcmp() instead?" sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\testapp.c" line="952"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: buffer" verbose="Memory leak: buffer" sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\testapp.c" line="1845"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." verbose="%d in format string (no. 1) requires &amp;#039;int&amp;#039; but the argument type is &amp;#039;unsigned int&amp;#039;." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\thread.c" line="770"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;item_link&amp;#039; is never used." verbose="The function &amp;#039;item_link&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\thread.c" line="582"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;bipbuf_peek&amp;#039; is never used." verbose="The function &amp;#039;bipbuf_peek&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\bipbuffer.c" line="130"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;bipbuf_size&amp;#039; is never used." verbose="The function &amp;#039;bipbuf_size&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\bipbuffer.c" line="32"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;itoa_32&amp;#039; is never used." verbose="The function &amp;#039;itoa_32&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\itoa_ljust.c" line="119"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;itoa_64&amp;#039; is never used." verbose="The function &amp;#039;itoa_64&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\itoa_ljust.c" line="142"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;mt_stats_lock&amp;#039; is never used." verbose="The function &amp;#039;mt_stats_lock&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\stats.c" line="362"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &amp;#039;mt_stats_unlock&amp;#039; is never used." verbose="The function &amp;#039;mt_stats_unlock&amp;#039; is never used." sinceDate="11/24/2018">
+            <location file="..\Downloads\memcached-master\stats.c" line="363"/>
+        </error>
+    </errors>
+</results>
